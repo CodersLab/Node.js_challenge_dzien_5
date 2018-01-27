@@ -319,8 +319,8 @@ Stwórz taką aplikację Express, która potrafi przyjąć w ścieżce dwie licz
 Stwórz taką aplikację Express, która ma trzy ścieżki:
 
 - `'/name/set/:imie'` - zapamiętuje ona w programie podane imię oraz wyświetla je w przeglądarce.
-- `'/name/show'` - wyświetluje ona podane wcześniej imię.
-- `'/name/check'` - wyświetluje ona informację, czy imię zostało już zapisane w programie czy nie. 
+- `'/name/show'` - wyświetla ona podane wcześniej imię.
+- `'/name/check'` - wyświetla ona informację, czy imię zostało już zapisane w programie czy nie. 
 
 > Podpowiedź: wykorzystaj zmienną.
 
