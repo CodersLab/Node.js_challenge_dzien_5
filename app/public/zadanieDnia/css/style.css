@@ -1,0 +1,14 @@
+.vote{
+    width: 100px;
+    padding:20px;
+    display:block;
+    margin:15px;
+}
+
+.vote.yes {
+    background : green;
+}
+
+.vote.no {
+    background : red;
+}
