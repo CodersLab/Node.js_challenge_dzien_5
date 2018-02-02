@@ -1,20 +1,20 @@
 const express = require('express');
 const app = express();
 
-let answer = {};
+let votes = {};
 
 app.use(express.static('./public/zadanieDnia/'));
 
-app.get('/vote/:vote', (req, res) => {
-  let {vote} = req.params;
-  answer[vote] === undefined ? answer[vote] = 1 : answer[vote]++;
+app.get('/vote/:option', (req, res) => {
+  let {option} = req.params;
+  votes[option] === undefined ? votes[option] = 1 : votes[option]++;
   res.send('Dziękujemy za głos!');
 });
 
 app.get('/votes/check', (req, res) => {
-  let results = '';
-  for (let vote in answer) {
-    results += `${vote} : ${answer[vote]}<br>`;
+  let results = "";
+  for (let option in votes) {
+    results += `${option} : ${votes[option]}<br>`;
   }
   res.send(results);
 });
