@@ -6,12 +6,13 @@ let answer = {};
 app.use(express.static('./public/zadanieDnia/'));
 
 app.get('/vote/:vote', (req, res) => {
-  answer[req.params.vote] === undefined ? answer[req.params.vote] = 1 : answer[req.params.vote]++;
+  let {vote} = req.params;
+  answer[vote] === undefined ? answer[vote] = 1 : answer[vote]++;
   res.send('Dziękujemy za głos!');
 });
 
 app.get('/votes/check', (req, res) => {
-  let results = "";
+  let results = '';
   for (let vote in answer) {
     results += `${vote} : ${answer[vote]}<br>`;
   }
