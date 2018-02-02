@@ -12,7 +12,7 @@ app.get('/vote/:vote', (req, res) => {
 
 app.get('/votes/check', (req, res) => {
   let results = "";
-  for (var vote in answer) {
+  for (let vote in answer) {
     results += `${vote} : ${answer[vote]}<br>`;
   }
   res.send(results);
