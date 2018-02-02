@@ -7,7 +7,7 @@ app.use(express.static('./public/zadanieDnia/'));
 
 app.get('/vote/:option', (req, res) => {
   let {option} = req.params;
-  votes[option] === undefined ? votes[option] = 1 : votes[option]++;
+  votes[option] = votes[option] + 1 || 1;
   res.send('Dziękujemy za głos!');
 });
 
