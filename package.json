@@ -1,0 +1,22 @@
+{
+  "name": "challenge",
+  "version": "1.0.0",
+  "description": "<img alt=\"Logo\" src=\"https://coderslab.pl/svg/logo-coderslab.svg\" width=\"400\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angorzan/Node.js_challenge_dzien_5.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angorzan/Node.js_challenge_dzien_5/issues"
+  },
+  "homepage": "https://github.com/angorzan/Node.js_challenge_dzien_5#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
