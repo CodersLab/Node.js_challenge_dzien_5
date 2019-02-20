@@ -10,3 +10,4 @@ app.get('/manual/route', (req, res) => {
 app.listen(3000, () => {
     console.log('Serwer uruchomiony na porcie 3000');
 });
+
